@@ -16,18 +16,26 @@
         .small {
             font-size: 11px;
         }
-        .u {
+        <!--.u {
             text-decoration: underline;
-        }
-        .s {
+        }-->
+        <!--.s {
             text-decoration: line-through;
-        }
+        }-->
         
         h1 {
             color: red;
         }
         
-    </style>
+       
+        .int :last-child {
+        text-decoration: underline;
+        }
+        
+        .int2 :first-child {
+        text-decoration: line-through;
+        }
+        </style>
     <body>
 <!--
 1) Заменяем все теги внутри <p> на <span>. Кроме <br>, разумеется.
@@ -42,13 +50,17 @@
         <span class="em">Что</span> ищет <span class="bold">он</span> в стране <span class="small">далекой</span>?<br>
         <span class="em">Что</span> кинул <span class="bold">он</span> в краю <span class="small">родном</span>?..</div><br>
         
-        <div>Играют <span class="bold">волны</span> — <span class="bold">ветер</span> свищет,<br>
+        <div class="int">Играют <span class="bold">волны</span> — <span class="bold">ветер</span> свищет,<br>
         И <span class="bold">мачта</span> гнется и скрыпит…<br>
-        Увы! <span class="u">Он счастия не ищет<br>
+        Увы! <span>Он счастия не ищет<br>
         И не от счастия бежит!</span></div><br>
+        <!--Увы! <span class="u">Он счастия не ищет<br>
+        И не от счастия бежит!</span></div><br>-->
         
-        <div><span class="s">Под ним струя <span class="kurs">светлей лазури</span>,<br>
+        <div class="int2"><span class="s">Под ним струя <span class="kurs">светлей лазури</span>,<br>
         Над ним луч солнца <span class="kurs">золотой</span>…</span><br>
+        <!--<div><span class="s">Под ним струя <span class="kurs">светлей лазури</span>,<br>
+        Над ним луч солнца <span class="kurs">золотой</span>…</span><br>-->
         А он, мятежный, просит бури,<br>
         <span class="em">Как будто</span> в бурях есть покой!</div>
         
