@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Transforms</title>
+        
+        <style>
+            @keyframes mychanges {
+                  25% {
+                    height: 300px;
+                  }       
+                  
+
+                
+              
+                  
+                  70% {
+                      width: 300px;
+                      height: 200px;
+                      border: 1px solid black;
+                  }
+                  
+            }
+            .outer {
+                padding: 100px;
+                width: 300px;
+                height: 300px;
+                margin: 100px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .inner {
+                width: 100px;
+                height: 100px;
+                
+                background-color: rgb(255,0,0);
+                animation: mychanges 5s infinite;
+            }
+            
+           
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="outer">
+            <div class="inner"></div>
+        </div>
+    </body>
+</html>
