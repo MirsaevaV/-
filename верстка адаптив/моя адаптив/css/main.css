@@ -1,0 +1,215 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap; 
+
+}
+    
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; 
+
+}
+
+/* global reset */
+html, body, body div, div, span, label, h1, h2, h3, h4, h5, h6, p, a, em, img, s, small, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, button, form, fieldset, article, aside, footer, header, main, nav, section, input, textarea, select, option {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+html * {
+    max-height: 1000000px;
+}
+
+.conteiner {
+    width: 1140px;
+    margin: 0 auto;
+    
+    
+}
+
+/*Header*/
+header .conteiner {
+    height: 48px;
+    padding: 38px 0;
+
+}
+
+.logo {
+    float: left;
+    width: 46px;
+    height: 48px;
+    background: url('../image/logo.png') center center no-repeat;
+    
+}
+
+.menu {
+    float: right;
+    width: 34px;
+    height: 38px;
+    background: url('../image/menu.png') center center no-repeat;
+    
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+}
+
+p li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    }
+    
+    
+/*main*/
+main {
+    margin-top: -123px;
+    flex: 100%;
+}
+.wrap {
+    background: linear-gradient(0deg, #EBF3FB 0%, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    height: 768px;    
+}
+
+main .conteiner {
+    background:url('../image/bob.png') right 193px no-repeat;
+    height: 481px;
+    padding: 193px 0 94px;
+    
+}
+
+h1 { 
+    width: 506px;
+    height: 148px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}
+
+main p { 
+    width: 425px;
+    height: 82px; 
+    padding-top: 32px;
+}
+
+main button {
+    width: 220px;
+    height: 56px;
+    background: #5A98D0;
+    cursor: pointer;
+    margin-top: 71px;
+    border-radius: 10px;
+}
+
+/*footer*/
+footer {
+    flex:none;
+}
+footer {
+    width: auto;
+    height: 657px;
+    background: #316099;
+}
+
+.top {
+    height: 391px;
+
+}
+
+.bottom {
+	display:flex;
+    align-items:center;
+	padding-top: 64px;
+}
+
+.line {
+    height: 0px;
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+    position: relative;}
+    
+
+.top h3 {
+    color: #FFFFFF;
+    width: 340.96px;
+    height: 92px;
+    padding-top: 91px;
+}
+
+ footer p {
+     width: 494.77px;
+    height: 80px;
+    color: #FFFFFF;
+    padding-top: 32px;
+ }
+ 
+footer button {
+    width: 237px;
+    height: 56px;
+    background: #5A98D0;
+    float: right;
+    cursor: pointer;
+    margin-top: -128px;
+    
+}
+
+li {
+	width:317px;
+	height: 48px;
+	float:left;
+	color: white;
+	padding-left: 19px;
+	margin-left: 20px;
+}
+
+
+ol {
+	display:flex;
+	justify-content: space-between;
+}
+
+li {
+	
+}
