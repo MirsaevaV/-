@@ -30,26 +30,30 @@ html * {
 }
 
 .container {
-    width: 1180px;
+    
     margin: 0 auto;
     
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     background: #f7f7f7;
    
 }
   /*Хедер*/
 header   {
+   
     height: 70px;
     background: #dfdfdf;
     border-bottom: 1px solid #b5b7ba;
-    
+    flex: none;
     
 }
 
-header .container   {
+header .container {
+    width: 1180px;
     display: flex;
     justify-content: space-evenly;
     height: 100%;
@@ -72,31 +76,43 @@ a {
 h1 {
           text-align: center;
           margin-top: 20px;
-          margin-bottom: 100px;
+          margin-bottom: 30px;
           
 }
 
+main {
+    flex: auto;
+    height: 100%;
+}
+
 main .container {
+    
+     max-width: 1180px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+     margin-bottom: 20px;
+    
+    
 }
 
 .img {
-    height: 390px;
-    width: 390px;
+    height: 380px;
+    width: 380px;
     border-radius: 50%;
     background:url('../img/i.jpg') center;
        
 }
 
 .porfolio {
-    width: 750px;
-    height: 670px;
+    width: 500px;
+    height: 600px;
     background: #f7f7f7; 
     margin-left: 20px;
     background: white; 
-    padding-top: 50px;
+    padding-top: 30px;
     padding-right: 70px;
+   
 }
 
 p   {
@@ -138,16 +154,20 @@ li a {
 /*футер*/
 
 footer {
-    height: 140px;
+   
+    height: 70px;
     background: #434445;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: none;
     color: #a4a4a4;
     font-family: 'Oswald';
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+}
+
+span {
+    
+    margin-left: 500px;
 }
 
 /* commons */
