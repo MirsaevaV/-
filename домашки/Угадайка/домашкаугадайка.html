@@ -232,7 +232,8 @@
                     var ans;
                     
                     document.getElementById('btn').onclick = function () {
-                    
+                    quest = parseInt(Math.random() * 100) + 1;
+                    console.log(quest);
                     document.getElementById('wind1').style.display = "none";
                     document.getElementById('wind2').style.display = "block";
                     document.getElementById('wind3').style.display = "none";
@@ -244,8 +245,8 @@
                 }
               
               
-                    var quest = parseInt(Math.random() * 100) + 1;
-                    console.log(quest);
+                    
+                    
                     document.getElementById('btn2').onclick = function () {
 
                     var ans = document.getElementById('input').value;
@@ -282,8 +283,6 @@
                      }
               
                     document.getElementById('btn3').onclick = function () {
-                    var quest = null;
-                    var quest = parseInt(Math.random() * 100) + 1;
                     document.getElementById('wind1').style.display = "block";
                     document.getElementById('wind2').style.display = "none";
                     document.getElementById('wind3').style.display = "none";
