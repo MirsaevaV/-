@@ -1,0 +1,640 @@
+font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Light.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+} 
+
+font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Bold.woff2') format('woff2');
+  font-weight: 500;
+  font-style: bold; 
+}   
+
+@font-face {
+    font-family: 'Vera Crouz';
+    src: url('../fonts/VeraCrouz.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* global reset */
+* {
+  border: 1px solid #f00; }
+  
+html, body, body div, div, span, h1, h2, h3, h4, h5, h6,
+p, a, em, img, small, strike, strong, sub, sup, b, u, i,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, aside,
+section, article, header, footer, main, input, textarea {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+    background: none;
+}
+ol, ul, li {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html * {
+    max-height: 1000000px;
+}
+input, textarea {
+    font: inherit;
+}
+button {
+    cursor: pointer;
+	border: none;
+	outline: none;
+    background: none;
+}
+html, body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+a:hover > span {
+    text-decoration: underline;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1250px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+/* main */
+body {
+    font: 12px/16px 'ProximaNova'; 
+    background: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+}
+header {
+    height: 100%;
+    
+    background:url('../image/poster1.jpg') center no-repeat;
+    color: black;
+    
+}
+main {
+    flex: 1 1 auto;
+}
+footer {
+    flex: none;
+    background:#331d15;
+    color: #fff;
+}
+
+/*header*/
+       /*Город + акции*/
+.top {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    font-size: 12px;
+    background: white;
+    padding-top:10px;
+    padding-bottom:10px;
+    width: 1280px;
+   
+    
+}
+
+#city {
+    cursor: pointer;
+    padding-left: 10px;
+   
+}
+
+#city:hover {
+			    color: #ff9400;
+                font-size: 14px;
+                
+		}
+
+/*выбор города и доставка*/
+.screener {
+    background: linear-gradient(5deg, rgba(31,25,13,0.2413340336134454) 0%, rgba(61,48,49,0.2413340336134454) 5%);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer; }
+
+.modal {
+    background: white;
+    border-radius: 10px;
+    position: fixed;
+    left: calc(50% - 240px);
+    width: 400px;
+    top: 200px;
+    padding: 40px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: red;
+    font-size: 40px;
+    line-height: 40px;
+    box-shadow: 0 0 5px rgba(0,0,0,.25);
+}
+
+.modal p {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    color: #000000;
+}
+
+.modal h3 {
+    padding-bottom: 20px;
+    
+}
+
+.modal p:hover {
+    color:#ff9400;
+}
+
+.dostavka{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    justify-content: space-evenly;
+    width: 760px;
+    font-weight: 400;
+    line-height: 1.5;
+    
+    
+}
+
+.d1 {
+    display: flex;
+    align-items: center;
+    margin-right: 16px
+    
+}
+
+.d2 {
+    display: flex;
+    align-items: center;
+    margin-right: 16px
+}
+    
+
+
+.d2 p {
+    padding-left: 10px;
+    
+}
+/*Лого тел и строка поиска с корзиной*/
+.center {
+    display: flex;
+    padding-top:20px;
+        
+}
+
+.nav {
+    display:flex;
+    max-width: 450px;
+    height:20px;
+    margin-bottom: 35px;
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: space-evenly;
+    width: 95%;
+    
+    
+    
+}
+
+.tel {
+    width: 400px;
+    font-size: 12px;
+    font-weight: 600;
+     padding-left:40px;
+}
+    
+
+.nav a{
+   
+   color: white;
+}
+
+.nav a:hover {
+    color: #ff9400;
+}
+.tel p  {
+    color: hsla(0,0%,100%,.5);
+}
+
+.tel a:hover {
+    color: #ff9400;
+}
+
+.navcont {
+    width:100%;
+    margin-left: 5px;
+}
+
+.navcont1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+input {
+    max-width: 300px;
+    height: 20px;
+    opacity: 0.4;
+    border: 1px solid #ff9400;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width:100%;
+    float: right;
+    background:url('../image/search.png') no-repeat;
+    background-position: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-position-x: 95%;
+    display:block;
+    color: white;
+}
+
+input:: -webkit-input-placeholder { color: white; }
+
+.user {
+    display:inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    
+}
+
+.user:hover {
+    color: #ff9400;
+    cursor: pointer;
+}
+
+p img {
+    padding-right:10px;
+    position: relative;
+    top: 5px;
+}
+
+.basket {
+    display:inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+
+.basket:hover {
+    color: #ff9400;
+    cursor: pointer;
+}
+
+
+.line {
+    height: 0px;
+    opacity: 0.4;
+    border: 1px solid #ffffff63;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    
+        }
+        
+/*Выпадающее меню*/        
+
+			 ul {
+			    padding:0;
+			    margin:0;
+			    list-style: none;
+			    position: relative;
+                
+                
+			    }
+			 
+			/* применяем inline-block позиционирование к элементам навигации */
+			 ul li {
+			    margin: 0px 5px 0 0;
+			    display:inline-block;
+                
+			    }
+                
+            .af li {
+			    margin: 0px -7px 0 0;
+			    display: block;
+                text-align: left;
+                background: white;
+                               
+			    }  
+             .af {
+                 border-radius: 10px; 
+             }
+          
+			
+			/* стилизуем ссылки */
+			.bottom a {
+			    display:block;
+			    padding:0 10px;
+			    color:#FFF;
+			    font-size:20px;
+			    line-height: 60px;
+			    text-decoration:none;
+              text-align: left;
+               
+                
+			}
+            
+            .af a {
+                color: black;
+            }
+			
+			/* изменяем цвет фона при наведении курсора */
+		 a:hover {
+			    color: #ff9400;
+                
+                
+		}
+
+
+.bottom ul ul {
+			    display: none;
+			    position: absolute;
+			    top: 100%;
+                
+			}
+			
+			/* отображаем выпадающий список при наведении */
+			.bottom ul li:hover > ul {
+			    display:inherit;
+                
+			}
+			
+			/* первый уровень выпадающего списка */
+			/*. bottom ul ul li {
+			    min-width:170px;
+			    float:none;
+			    display:list-item;
+			    position: relative;
+			} */  
+        
+ /*main*/
+    .containercontent  {
+        
+        
+        top: 54%;
+        text-align: center;
+        padding-left:50px;
+       
+        
+    }
+ 
+    .title {
+        font-family: 'Vera Crouz';
+        color: #ff9400;
+        font-size: 120px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 60px;
+        text-shadow: 0 0 40px #54422a;
+        margin-top: 15%;
+    }
+    
+    .titleb {
+        font-family: 'ProximaNova';
+        color: white;
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 1px;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 7rem;
+    }
+    
+    .arrow-image-down {
+       
+    }
+    
+    .contmin {
+        margin: 0 auto;
+        max-width: 940px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+ 
+ /*слайдер*/
+
+    .carousel {
+        position: relative;
+        padding: 10px 40px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+     
+    }
+    .prev {
+        left: 7px;
+    }
+
+    .next {
+        right: 7px;
+    }
+
+    .gallery {
+        max-width: 840px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .gallery ul {
+        height: 250px;
+        width: 9999px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        transition: margin-left 250ms;
+        font-size: 0;
+    }
+
+    .gallery li {
+      display: inline-block;
+      margin: 0;
+    }
+
+
+    .arrow {
+      position: absolute;
+      top: 120px;
+      padding: 0;
+      background: #ddd;
+      border-radius: 15px;
+      border: 1px solid gray;
+      font-size: 24px;
+      line-height: 24px;
+      color: #444;
+      display: block;
+    }
+    
+    .arrow:hover {
+	    color: #ff9400;
+        font-size: 30px;        
+		}
+
+
+
+ 
+    
+/*footer*/
+    .foot {
+              
+        display: flex;
+        margin-top: 55px;
+        
+    }
+    .contact {
+        max-width: 330px;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .contact .tel {
+        width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+       
+    }
+    
+    .adress, .mail {
+        font-size:14px;
+        padding-left:5px;
+        padding-right: 5px;
+        margin-top: 20px;
+        margin-bottom:20px;
+    }
+
+    
+
+    .mail a:hover {
+    color: #ff9400;
+    }
+    
+    .seti {
+        padding-left:5px;
+        padding-right: 5px;
+        margin-top: 15px;
+        display: flex;
+        justify-content:space-between;
+    }
+    .seti img {
+        border-radius: 50%;
+    }
+    h2 {
+       margin-top: 40px;
+       padding-left:5px;
+       padding-right: 5px;
+    }
+    
+    .faq{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .faq h2 {
+       margin-bottom: 30px;
+       margin-top: 0px;
+       padding-left:0;
+    }
+    
+    .faq a {
+        padding-bottom: 10px;
+    }
+    
+    .n {
+        
+        line-height: 1.5;
+        text-align: left;
+        color: #696570;
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: 15px;
+        padding-top: 12px;
+       
+    }
+   
+    
+@media (max-width: 1600px) {
+    .container {
+        width: auto;
+        margin: 0 40px;
+    }
+}
+
+
+
+@media (max-width: 1400px) {
+    .container {
+        width: auto;
+        margin: 0 40px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 769px) {
+    .container {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: auto;
+        margin: 0 10px;
+    }
+}
