@@ -37,7 +37,7 @@ $(function(){
 
     /* конфигурация */
     let width = 210; // ширина картинки
-    let count = 4; // видимое количество изображений
+    let count = 2; // видимое количество изображений
 
     let list = carousel.querySelector('ul');
     let listElems = carousel.querySelectorAll('li');

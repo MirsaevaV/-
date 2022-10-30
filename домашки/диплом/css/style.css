@@ -104,6 +104,8 @@ footer {
     flex: none;
     background:#331d15;
     color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /*header*/
@@ -272,7 +274,7 @@ footer {
    
 }
 
-input {
+.navcont1 input {
     max-width: 300px;
     height: 20px;
     opacity: 0.4;
@@ -448,12 +450,21 @@ p img {
         text-align: center;
         font-weight: 600;
         margin-top: 2rem;
-        margin-bottom: 7rem;
+        margin-bottom: 16rem;
     }
     
     .arrow-image-down {
-       
+        position: relative;
+        bottom: -0px;
+        animation: bounce 2s infinite;
+        margin-top: 50px;
     }
+    
+    @keyframes bounce {
+        100% { bottom: 0; }
+        100% { bottom: 10px; }
+    }
+    
     
     .contmin {
         margin: 0 auto;
@@ -519,9 +530,111 @@ p img {
         font-size: 30px;        
 		}
 
-
-
+    .shoco {
+        background:url('../image/poster2.jpg') center no-repeat;
+        height: 490px;
+        border-radius:10px;
+        margin-top: 50px;
+        margin-left:20px;
+        margin-right:20px;
+        margin-bottom: 20px;
+        
+        
+    }
+     
+    .shoco  p {
+        font-family: 'Vera Crouz';
+        line-height: 50px;
+        color: white;
+        padding-top: 170px;
+        font-size: 50px;
+        font-weight: 400;
+        text-align: center;
+       
+    }
+    
+    .forma {
+        background:url('../image/poster3.jpg') center no-repeat;
+        height: 420px;
+        border-radius:10px 10px 0 0;
+        margin-left:20px;
+        margin-right:20px;  
+    }
+    
+    .formasvyzi {
+        display: flex;   
+    }
+    
+    .form {
+        padding-top: 60px;
+        max-width: 700px;
+        width: auto;
+    }
+    
+    .form h3 {
+        font-size: 26px;
+        color: white;
+        
+    }
+    
+    .form p {
+        margin-top: 20px;
+        font-size: 22px;
+        color: white;
+        line-height: 24px;
+        margin-bottom: 60px;
+        
+    }
+    
+    .name {
+        border: 1px solid #ff9400;
+        border-radius: 10px;
+        max-width: 140px;
+        height: 60px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      
  
+    }
+    
+    .email {
+       
+        
+        border: 1px solid #ff9400;
+        border-radius: 10px;
+        max-width: auto;
+        width:322px;
+        height: 60px; 
+        padding-left: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    
+    .but {
+        max-width: 200px;
+        height: 60px; 
+        border-radius: 10px;
+        background: #ffaa36;
+        font: 16px/18px 'ProximaNova'; 
+    }
+    
+    .but:hover {
+        background: #9d661a;
+    }
+    
+    h4 {
+        margin-top: 60px;
+        color: white;
+        margin-bottom: 20px;
+        font: 22px/24px 'ProximaNova'; 
+}
+    .seti2 img {
+        border-radius: 50%;
+        margin-right:5px;
+    }
     
 /*footer*/
     .foot {
