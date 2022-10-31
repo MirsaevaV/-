@@ -1,0 +1,359 @@
+﻿        <!DOCTYPE html>
+        <html lang="ru">
+        <head>
+            <meta charset="utf-8">
+            
+            <title>Пример к ТЗ</title>
+            
+            <style>
+                 @font-face {
+                  font-family: 'Caveat';
+                  src: url('Caveat-Bold.woff2') format('woff2');
+                  font-weight: 400;
+                  font-style: normal; }
+                  
+                 html, body, body div, div, span, label, h1, h2, h3, h4, h5, h6, p, a, em, img, s, small, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, button, form, fieldset, article, aside, footer, header, main, nav, section, input, textarea, select, option {
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    outline: none;
+                    background: none;
+                }
+            
+            
+                 html {
+                    height: 100%;
+                 }
+            
+                
+
+               body {
+                    font-family: 'Caveat';
+                    font-weight: 400;
+                    height: 100%;
+                    background: Aquamarine;
+                    display: flex;
+                    flex-direction: column;
+                }
+                   
+                   
+                
+                
+                main {
+                     flex: auto;
+                }
+                
+                
+                
+                footer {
+                    flex: none;
+                    background: green;
+                    height: 50px;
+                }
+                
+                
+                .container {
+                    width: 1180px;
+                    margin: 70px auto;    
+                }
+                
+                 h1 {
+                    text-align: center; 
+                    margin-top: 30px;
+                    font-size: 55px;
+                    
+                }
+                #wind1 {
+                    background: url('fon.jpg') no-repeat;
+                    width: 80%;
+                    height: 450px;
+                    border: 1px solid green;
+                    margin: 0 auto;
+                    border-radius: 40px;
+                    box-shadow: 4px 0px 56px 56px rgba(34, 60, 80, 0.91);
+                }
+                
+                #wind2 {
+                    position: relative;
+                    background: url('fon.jpg') no-repeat;
+                    width: 80%;
+                    height: 450px;
+                    border: 1px solid green;
+                    margin: 0 auto; 
+                    border-radius: 40px;
+                    display: none;
+                    box-shadow: 4px 0px 56px 56px rgba(34, 60, 80, 0.91);
+                }
+                
+                  #wind3 {
+                    position: relative;
+                    background: url('fon.jpg') no-repeat;
+                    width: 80%;
+                    height: 450px;
+                    border: 1px solid green;
+                    margin: 0 auto; 
+                    border-radius: 40px;
+                    display: none;
+                    box-shadow: 4px 0px 56px 56px rgba(34, 60, 80, 0.91);
+                }
+                
+                
+                h2 {
+                    margin: 100px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    font-size: 40px;
+                    margin-top: 50px;
+                   
+                }
+            
+                #btn {
+                    cursor: pointer;
+                    color: white;
+                    font-family: 'Caveat';
+                    font-size: 30px;
+                      width: 200px;
+                      height: 70px;
+                      border-radius: 20px;
+                      background: DarkGreen;
+                      text-align: center;
+                      margin-left: 370px;
+                      margin-top: 30px;
+                      
+                }
+                
+                
+                #btn2 {
+                    cursor: pointer;
+                    color: white;
+                    font-size: 30px;
+                      width: 200px;
+                      height: 70px;
+                      border-radius: 20px;
+                      background: DarkGreen;
+                      text-align: center;
+                      margin-left: 370px;
+                      display: block;
+                      
+
+                      }
+                    
+                    #btn3 {
+                    cursor: pointer;
+                    color: white;
+                    font-size: 30px;
+                      width: 200px;
+                      height: 70px;
+                      border-radius: 20px;
+                      background: DarkGreen;
+                      text-align: center;
+                      margin-left: 370px; 
+                      margin-top: 10px;
+                      
+
+                      }
+                
+                #input {
+                    height: 50px;
+                    width: 180px;
+                    border: 1px solid white;
+                    margin-left: 380px;
+                    border-radius: 20px;
+                    margin-bottom: 20px;
+                     font-size: 30px;
+                     text-align: center;
+                    
+                }
+                
+                #cntr {
+                    text-align: center;
+                    font-size: 55px;
+                    margin-bottom: 50px;
+                }
+                
+                #big {
+                    display:block;
+                    text-align: center;
+                    font-size: 30px;
+                    margin-bottom:10px;
+                }
+                
+                #small {
+                    display:block;
+                    text-align: center;
+                    font-size: 30px;
+                     margin-bottom:10px;
+                }
+                  
+                
+              
+            </style>
+        </head>
+        <body>
+             <main>
+             
+                <h1>Игра "Угадай число"</h1>
+                
+                <div class = "container">
+                <p id="cntr"></p>
+                    <div id = "wind1">
+                        <h2>Для начала игры нажмите кнопку:</h2>
+                        <button id = "btn">Начать игру</button>
+                       
+                         
+                    </div>
+                    <div id = "wind2">
+                        <h2>Введите число от 1 до 100</h2>
+                        <p id = "big">Введите больше</p>
+                        <p id = "small">Введите меньше</p>
+                        <input id = "input" type = "text" name = "number" placeholder ="">
+                        <button id = "btn2">Ок!</button>
+                        <p id="cntr"></p>
+                    </div>
+                    <div id = "wind3">
+                        <h2>Ура!!!! Вы Угадали!!!!</h2>
+                        <button id = "btn3">Начать игру сначала</button>   
+                    </div>
+                
+                
+                </div>
+             </main>
+
+             <footer>
+                <div>
+                     2021 All rights reserved.  
+                </div>
+             </footer>
+
+              <script>
+                   
+                    let counter = 0;
+                    var quest;
+                    var ans;
+                    
+                    document.getElementById('btn').onclick = function () {
+                    quest = parseInt(Math.random() * 100) + 1;
+                    console.log(quest);
+                    document.getElementById('wind1').style.display = "none";
+                    document.getElementById('wind2').style.display = "block";
+                    document.getElementById('wind3').style.display = "none";
+                    document.getElementById('cntr').style.display = "block";
+                    document.getElementById('big').style.display = "none";
+                    document.getElementById('small').style.display = "none";
+                    counter = 0;
+                    document.getElementById('cntr').innerHTML = "Количество попыток: " + counter;
+                }
+              
+              
+                    
+                    
+                    document.getElementById('btn2').onclick = function () {
+
+                    var ans = document.getElementById('input').value;
+                    ans = +ans;
+                    counter++;
+                    
+                    if (isNaN(ans)) {
+                    alert('Я просил ввести число');
+                    
+                }
+
+                    
+                    if (ans == quest) {
+                    document.getElementById('wind2').style.display = "none";
+                    document.getElementById('wind3').style.display = "block";
+                    document.getElementById('cntr').innerHTML = "Вы угадали число с " + counter + " попыток. Хотите сыграть еще раз?";
+                }
+                
+                
+                    else if (ans > quest) {       
+                    document.getElementById('big').style.display = "none";
+                    document.getElementById('small').style.display = "block";
+                    document.getElementById('cntr').innerHTML = "Количество попыток: " + counter;
+                    
+                }
+
+                    else if (ans < quest) {
+                    document.getElementById('big').style.display = "block";
+                    document.getElementById('small').style.display = "none";
+                    document.getElementById('cntr').innerHTML = "Количество попыток " + counter;
+                 } 
+                
+                    
+                     }
+              
+                    document.getElementById('btn3').onclick = function () {
+                    document.getElementById('wind1').style.display = "block";
+                    document.getElementById('wind2').style.display = "none";
+                    document.getElementById('wind3').style.display = "none";
+                    counter = 0;
+                    document.getElementById('cntr').innerHTML = "Количество попыток: " + counter;
+                     } 
+              
+              
+              
+              
+              
+              
+                   
+                    /* document.getElementById('btn').onclick = function () {
+                     document.getElementById('wind1').style.display = "none";
+                     document.getElementById('wind2').style.display = "block";
+                     }
+                     
+                    let counter = 0;
+                    counter = 0 ;
+                    document.getElementById('btn2').onclick = function (){
+                    counter++;
+                    document.getElementById('cntr').innerHTML = counter; }
+                    
+                    if (counter>=10) {
+                        document.getElementById('wind1').style.display = "block";
+                        document.getElementById('wind2').style.display = "none";
+                        document.getElementById('cntr').style.display = "none";
+                        document.getElementById('cntr').innerHTML = "У Вас усть 10 попыток";
+                    } else {
+                      document.getElementById('btn2').onclick = ugd;      
+                      }
+                
+              
+               
+               
+                
+               
+                var quest = parseInt(Math.random() * 100) + 1;
+                console.log (quest);
+                
+                function ugd(){
+                
+                var ans = document.getElementById('input').value;
+            while (true) {
+                 counter++;
+                
+                if (isNaN(ans)) {
+                    alert('Я просил ввести число');
+                    return 1;
+                    document.getElementById('cntr').innerHTML = "Количество попыток" + counter;
+                }
+                 if (ans == quest) {
+                    alert('Вы угадали');
+                    return 2;
+                    
+                }
+                  else if (ans > quest) {
+                    alert('Введите меньше');
+                   return 3;
+                   document.getElementById('cntr').innerHTML = "Количество попыток" + counter;
+                 }
+                  else if (ans < quest) {
+                    alert('Введите больше');
+                     return 4;
+                     document.getElementById('cntr').innerHTML = "Количество попыток" + counter;
+                 } 
+            } }  */
+            
+
+              </script>
+  
+        </body>
+        </html>

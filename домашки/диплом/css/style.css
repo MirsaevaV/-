@@ -26,11 +26,11 @@ font-face {
     font-display: swap;
 }
 
-
-
-/* global reset */
 * {
   border: 1px solid #f00; }
+
+/* global reset */
+
   
 html, body, body div, div, span, h1, h2, h3, h4, h5, h6,
 p, a, em, img, small, strike, strong, sub, sup, b, u, i,
@@ -43,6 +43,7 @@ section, article, header, footer, main, input, textarea {
 	outline: none;
     background: none;
 }
+
 ol, ul, li {
 	list-style: none;
 }
@@ -71,6 +72,8 @@ a {
     cursor: pointer;
     color: white;
 }
+
+
 a:hover > span {
     text-decoration: underline;
 }
@@ -91,8 +94,7 @@ body {
     min-width: 320px;
 }
 header {
-    height: 100%;
-    
+    height: 100%; 
     background:url('../image/poster1.jpg') center no-repeat;
     color: black;
     
@@ -436,9 +438,10 @@ p img {
         font-size: 120px;
         width: 100%;
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 100px;
         text-shadow: 0 0 40px #54422a;
         margin-top: 15%;
+        
     }
     
     .titleb {
@@ -738,16 +741,80 @@ p img {
     }
 }
 
-@media (max-width: 769px) {
-    .container {
-        width: auto;
-        margin: 0 20px;
-    }
-}
-
-@media (max-width: 576px) {
+@media (max-width: 670px) {
     .container {
         width: auto;
         margin: 0 10px;
     }
+    
+    .d2 {
+        margin-right:5px;
+        font-size:8px;
+    }
+    
+   .logo1 {
+        width: 60px;
+    }
 }
+
+@media (max-width: 600px) {
+    .container {
+        width: auto;
+        margin: 0 10px;
+    }
+    .nav {
+        max-width: 300px;
+        font-size: 8px;
+    }
+    
+    .tel {
+    width: 300px;
+    font-size: 8px;
+}
+
+    .title {
+        font-family: 'Vera Crouz';
+        color: #ff9400;
+        font-size: 70px;  }
+        
+        
+    .shoco p {
+        font-size: 50px;}   
+    
+    .form p {
+    font-size: 14px; }
+    
+    h4 {
+    font: 10px/12px 'ProximaNova';
+}
+
+}
+
+/*html contact*/
+    header2 {
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 400px; 
+        background:url('../image/poster4.jpg') center no-repeat;
+        margin-bottom: 20px;
+    }
+    
+    .cont {
+        margin-top: 5%;
+        font-size: 80px;
+    }
+    
+    .spec {
+         opacity: 0.4;
+         text-align: center;
+          font-size: 20px;
+          margin-bottom:20px;
+          line-height: 1.5;
+    }
+    
+    .map {
+        
+        height: 360px;
+        width: 100%;
+    }
