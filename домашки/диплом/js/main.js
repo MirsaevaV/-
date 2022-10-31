@@ -36,8 +36,8 @@ $(function(){
     }
 
     /* конфигурация */
-    let width = 210; // ширина картинки
-    let count = 2; // видимое количество изображений
+    let width = 383; // ширина картинки
+    let count = 1; // видимое количество изображений
 
     let list = carousel.querySelector('ul');
     let listElems = carousel.querySelectorAll('li');
@@ -59,3 +59,26 @@ $(function(){
       position = Math.max(position, -width * (listElems.length - count));
       list.style.marginLeft = position + 'px';
     };
+    
+    
+    
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

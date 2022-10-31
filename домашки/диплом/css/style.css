@@ -475,6 +475,10 @@ p img {
         padding-left:15px;
         padding-right:15px;
     }
+    
+    
+  
+    
  
  /*слайдер*/
 
@@ -494,13 +498,13 @@ p img {
     }
 
     .gallery {
-        max-width: 840px;
+        max-width: 1158px;
         width: 100%;
         overflow: hidden;
     }
     
     .gallery ul {
-        height: 250px;
+      
         width: 9999px;
         margin: 0;
         padding: 0;
@@ -511,26 +515,28 @@ p img {
 
     .gallery li {
       display: inline-block;
-      margin: 0;
+      margin: 10px;
+      
+    }
+    li img {
+       border-radius:10px; 
     }
 
 
     .arrow {
       position: absolute;
-      top: 120px;
+      top: 180px;
       padding: 0;
-      background: #ddd;
-      border-radius: 15px;
-      border: 1px solid gray;
-      font-size: 24px;
+      
+      font-size: 50px;
       line-height: 24px;
-      color: #444;
+      color: #ff9411;
       display: block;
     }
     
     .arrow:hover {
-	    color: #ff9400;
-        font-size: 30px;        
+	    color: #FF4500;
+        
 		}
 
     .shoco {
